@@ -8,7 +8,13 @@ class Categories extends Component {
     return (
       <div>
         <Navbar />
-        <CreateCategory />
+        <div className="container mt-5">
+          <div className="row">
+            <div className="col-xl-8 offset-2">
+              <CreateCategory />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

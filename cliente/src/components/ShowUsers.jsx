@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 class ShowUsers extends Component {
   state = {
-      users: [],
-      categories: []
+      users: []
   };
   componentDidMount() {
     fetch("/api/users")

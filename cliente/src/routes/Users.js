@@ -8,7 +8,13 @@ class Users extends Component {
     return (
       <div>
         <Navbar />
-        <CreateUser />
+        <div className="container mt-5">
+          <div className="row">
+            <div className="col-xl-8 offset-2">
+              <CreateUser />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

@@ -4,9 +4,7 @@
   "description": "Interview test",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "nodemon index.js"
   },
   "author": "JulianGarzon22",
   "license": "ISC",

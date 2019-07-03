@@ -45,7 +45,7 @@ router.delete("/api/categories/:id", (req, res) => {
 
 router.post("/api/categories", (req, res) => {
   const { id, name } = req.body;
-  const query = 'CALL categoryAddOrEdit(?, ?, ?, ?);';
+  const query = 'CALL categoryAddOrEdit(?, ?);';
   mysqlConnection.query(query, [id, name], (err, rows, fields) => {
     if (!err) {
       res.json({ status: "Category Saved" });
@@ -58,7 +58,7 @@ router.post("/api/categories", (req, res) => {
 router.put("/api/categories/:id", (req, res) => {
   const { name } = req.body;
   const { id } = req.params;
-  const query = 'CALL categoryAddOrEdit(?, ?, ?, ?);';
+  const query = 'CALL categoryAddOrEdit(?, ?);';
   mysqlConnection.query(query, [id, name], (err, rows, fields) => {
     if (!err) {
       res.json({ status: "Category Updated" });
