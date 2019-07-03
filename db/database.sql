@@ -19,3 +19,13 @@ CREATE TABLE users (
 
 DESCRIBE categories;
 DESCRIBE users;
+
+INSERT INTO categories VALUES 
+	(1,'Empleado'),
+    (2, 'Estudiante'),
+    (3,'Natural');
+
+INSERT INTO users VALUES 
+	(1,'2', 'Pablo Romero', '100000.00'),
+    (2, '2', 'Enrique Gonzalez', '2451.00'),
+    (3,'3', 'Manuel Casas', '780000.00');
