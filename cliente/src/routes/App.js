@@ -9,12 +9,12 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <div className="container mt-5">
+        <div className="container mt-5 mb-5">
           <div className="row">
-            <div className="col-xl-4">
+            <div className="col-xl-3">
               <ShowCategories />
             </div>
-            <div className="col-xl-8">
+            <div className="col-xl-9">
               <ShowUsers />
             </div>
           </div>

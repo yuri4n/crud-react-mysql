@@ -36,7 +36,7 @@ class CreateCategory extends Component {
   renderAlert() {
     if (this.state.alert === true) {
       return (
-        <div class="alert alert-success" role="alert">
+        <div className="alert alert-success" role="alert">
           Category has been created
         </div>
       );

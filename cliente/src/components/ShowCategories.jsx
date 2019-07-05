@@ -19,7 +19,7 @@ class ShowCategories extends Component {
         <h1>Categorias</h1>
         <ul>
           {this.state.categories.map(category =>
-            <li>{category.name}</li>  
+            <li key={category.id}>{category.name}</li>  
           )}
         </ul>
       </div>

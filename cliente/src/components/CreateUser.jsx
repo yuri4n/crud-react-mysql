@@ -60,7 +60,7 @@ class CreateUser extends Component {
   renderAlert() {
     if (this.state.alert === true) {
       return (
-        <div class="alert alert-success" role="alert">
+        <div className="alert alert-success" role="alert">
           User has been created
         </div>
       );
@@ -103,20 +103,20 @@ class CreateUser extends Component {
             />
           </div>
           <p>Balance: </p>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text">$</span>
+          <div className="input-group mb-3">
+            <div className="input-group-prepend">
+              <span className="input-group-text">$</span>
             </div>
             <input
               value={this.state.balance}
               onChange={this.handleChangeBalance}
               type="text"
-              class="form-control"
+              className="form-control"
               aria-label="Amount"
               placeholder="0"
             />
-            <div class="input-group-append">
-              <span class="input-group-text">.00</span>
+            <div className="input-group-append">
+              <span className="input-group-text">.00</span>
             </div>
           </div>
           <button className="btn btn-primary">Send</button>
